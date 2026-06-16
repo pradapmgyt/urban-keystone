@@ -257,13 +257,28 @@ body{
 
 .carousel-track{
     display:flex;
-    align-items:center;
-
     gap:12px;
 
     width:1300px;
 
-    overflow:hidden;
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    scroll-behavior:smooth;
+
+    scrollbar-width:none;
+
+    cursor:grab;
+
+    -webkit-overflow-scrolling:touch;
+}
+
+.carousel-track::-webkit-scrollbar{
+    display:none;
+}
+
+.carousel-track:active{
+    cursor:grabbing;
 }
 
 .carousel-track img{
