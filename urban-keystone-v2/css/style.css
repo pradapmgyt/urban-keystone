@@ -146,6 +146,13 @@ body{
     break-inside:avoid;
     position:relative;
 }
+.project-item,
+.project-item:visited,
+.project-item:hover,
+.project-item:active{
+    color:#111 !important;
+    text-decoration:none !important;
+}
 
 .project-item img{
     width:100%;
@@ -161,11 +168,9 @@ body{
     opacity:0;
     transition:.3s;
 }
-.project-overlay h3,
-.project-overlay p,
-.project-overlay a{
-    color:#111;
-    text-decoration:none;
+.project-overlay *{
+    color:#111 !important;
+    text-decoration:none !important;
 }
 
 .project-item:hover .project-overlay{
