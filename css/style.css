@@ -406,24 +406,25 @@ body{
     transform:scale(1.05);
 }
 .social-links{
-    display:flex;
-    align-items:center;
-    gap:20px;
-
     justify-self:end;
-
-    margin-right:20px;
 }
 
-.social-links a{
+.social-row{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:18px;
+}
+
+.social-row a{
     display:flex;
     align-items:center;
     justify-content:center;
 }
 
-.social-links img{
-    width:18px;
-    height:18px;
+.social-row img{
+    width:20px;
+    height:20px;
     object-fit:contain;
     display:block;
 }
