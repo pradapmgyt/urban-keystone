@@ -251,6 +251,19 @@ body{
     border:1px solid #eee;
     padding:25px;
 }
+.contact-image img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:8px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
 /* HOME PAGE IMAGE STRIP */
 
 .hero-carousel{
@@ -481,6 +494,9 @@ body{
     max-width:900px;
     line-height:2;
     color:#555;
+}
+.contact-grid{
+    grid-template-columns:1fr;
 }
 }
 
