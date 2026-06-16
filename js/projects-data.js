@@ -65,7 +65,7 @@ image:"assets/images/projects/family-lounge.jpg"
 
 {
 id:"veliyaars-residence",
-title:" House Of Areas",
+title:" House Of Veliyaars",
 category:"Residential Architecture",
 description:"Located in Tenkasi, Tamil Nadu, this residence is conceived as a contemporary response to tropical living, where architecture is shaped by climate, light, and landscape. The design is organized through a clear and disciplined composition, balancing solid volumes with generous openings to create a sense of openness, transparency, and environmental comfort.A central architectural element anchors the façade, establishing a strong visual identity while reinforcing the building’s spatial order. Deep recesses, shaded terraces, and carefully proportioned openings mitigate solar gain and enhance natural ventilation, creating comfortable living environments throughout the year.The material palette is deliberately restrained, combining textured render, terracotta-toned cladding, aluminium-framed glazing, and finely detailed metalwork. These elements are expressed with clarity and precision, allowing materiality and proportion to define the architectural character.As daylight shifts, integrated lighting reveals the depth and rhythm of the façade, reinforcing its sculptural presence. The residence is envisioned as a timeless family home—an architecture of permanence that seeks to enrich everyday life through simplicity, climatic responsiveness, and enduring spatial quality..",
 image:"assets/images/projects/veliyaars-residence.jpg"
