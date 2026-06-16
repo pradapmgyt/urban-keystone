@@ -161,6 +161,12 @@ body{
     opacity:0;
     transition:.3s;
 }
+.project-overlay h3,
+.project-overlay p,
+.project-overlay a{
+    color:#111;
+    text-decoration:none;
+}
 
 .project-item:hover .project-overlay{
     opacity:1;
@@ -521,4 +527,4 @@ body{
     color:#999;
 }
 }
-}
+
