@@ -470,4 +470,54 @@ body{
     line-height:2;
     color:#555;
 }
+    /* FOOTER */
+
+.footer{
+
+    padding:40px 60px;
+
+    text-align:right;
+
+    border-top:1px solid #eee;
+
+    margin-top:80px;
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    gap:10px;
+
+    margin-bottom:20px;
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#666;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.3s;
+}
+
+.footer-links a:hover{
+
+    color:#111;
+}
+
+.footer-copy{
+
+    font-size:13px;
+
+    color:#999;
+}
 }
