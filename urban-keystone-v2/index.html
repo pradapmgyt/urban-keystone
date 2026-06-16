@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Keystone Architectural Studio</title>
+    <meta name="description"
+content="Urban Keystone Architectural Studio specializes in architectural planning, interior design, 3D visualization, residential and commercial projects.">
+
+<meta name="keywords"
+content="Urban Keystone, Urban Keystone Architectural Studio, Architecture, Interior Design, Residential Design">
+
+<meta name="author"
+content="Urban Keystone Architectural Studio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+```
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+  <div class="logo-wrapper">
+
+    <div class="logo">
+        <img src="assets/images/logo.jpeg" alt="Urban Keystone">
+    </div>
+
+    <h1 class="brand-title">
+        URBAN KEYSTONE
+    </h1>
+
+    <h3 class="studio-title">
+        ARCHITECTURAL STUDIO
+    </h3>
+
+</div>
+
+    <ul class="nav-links">
+       <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+<div class="social-links">
+
+    <a href="https://www.instagram.com/uk_architectural_studio?igsh=MWUyNWdsdm1sc2g1Zg%3D%3D&utm_source=qr" target="_blank">
+        <img src="assets/images/icons/instagram.png" alt="Instagram">
+    </a>
+
+    <a href="https://www.youtube.com/channel/UC3ftX18S6WsdTn4reTLVzFg" target="_blank">
+        <img src="assets/images/icons/youtube.png" alt="YouTube">
+    </a>
+
+    <a href="https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BRaxqkUIdQuOb%2B9Tn%2BLbnwQ%3D%3D" target="_blank">
+        <img src="assets/images/icons/linkedin.png" alt="LinkedIn">
+    </a>
+
+</div>
+</nav>
+
+<!-- IMAGE STRIP -->
+
+<section class="hero-carousel">
+
+    <button class="carousel-btn prev">&#10094;</button>
+
+    <div class="carousel-track">
+
+      <img src="assets/images/projects/veliyaars-residence.jpg">
+
+<img src="assets/images/projects/billiards-1.jpg">
+
+<img src="assets/images/projects/french-villa.jpg">
+
+<img src="assets/images/projects/kitchen-2.jpg">
+
+<img src="assets/images/projects/english-villa.jpg">
+
+<img src="assets/images/projects/master-bedroom.jpg">
+
+<img src="assets/images/projects/tropical-bungalow.jpg">
+
+<img src="assets/images/projects/master-toilet-3.jpg">
+
+    </div>
+
+    <button class="carousel-btn next">&#10095;</button>
+
+</section>
+
+<!-- ABOUT SECTION -->
+
+<section class="home-about">
+
+    <div class="container">
+
+        <h2>
+            Where Every Space Tells a Story
+        </h2>
+
+        <p>
+            Urban Keystone Architectural Studio creates inspiring,
+            functional and timeless architectural spaces that combine
+            creativity, practicality and thoughtful design.
+
+            Our mission is to transform ideas into meaningful spaces
+            that enrich everyday life.
+        </p>
+
+        <a href="about.html" class="btn">
+            Learn More
+        </a>
+
+    </div>
+
+</section>
+<section class="testimonials">
+
+    <h2>What Our Clients Say</h2>
+
+    <div class="testimonial-wrapper">
+
+        <button class="testimonial-btn prev-testimonial">
+            &#10094;
+        </button>
+
+        <div class="testimonial-container">
+
+            <div class="testimonial-card active">
+
+                <p>
+                    “Urban Keystone Architectural Studio transformed our farmhouse with a perfect blend of design and functionality. Their attention to detail, professional approach, and clear 3D visualizations made the process smooth and enjoyable. We are extremely satisfied with the final outcome and appreciate their creativity and quality of work.”
+                </p>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p>
+                    “This studio delivered our private bungalow exactly as we imagined. Their creative design approach, attention to detail, and professional coordination made the entire journey seamless. From planning to execution, the team maintained excellent communication and ensured every space reflected our lifestyle and needs. We are truly happy and highly appreciate their dedication and quality of work.”
+                </p>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p>
+                    “The architects’ team transformed our interiors into an elegant and functional space with great attention to detail. Their planning, material selection, and professional approach made the entire process smooth and stress-free. We are extremely happy with the final outcome.”
+                </p>
+
+            </div>
+
+        </div>
+
+        <button class="testimonial-btn next-testimonial">
+            &#10095;
+        </button>
+
+    </div>
+
+</section>
+
+<script>
+
+    const track = document.querySelector(".carousel-track");
+
+    document.querySelector(".next").addEventListener("click", () => {
+
+        track.scrollBy({
+            left: 350,
+            behavior: "smooth"
+        });
+
+    });
+
+    document.querySelector(".prev").addEventListener("click", () => {
+
+        track.scrollBy({
+            left: -350,
+            behavior: "smooth"
+        });
+
+    });
+
+</script>
+    <script>
+
+const slider = document.querySelector('.carousel-track');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+
+    isDown = true;
+    slider.classList.add('active');
+
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+
+});
+
+slider.addEventListener('mouseleave', () => {
+    isDown = false;
+});
+
+slider.addEventListener('mouseup', () => {
+    isDown = false;
+});
+
+slider.addEventListener('mousemove', (e) => {
+
+    if(!isDown) return;
+
+    e.preventDefault();
+
+    const x = e.pageX - slider.offsetLeft;
+
+    const walk = (x - startX) * 2;
+
+    slider.scrollLeft = scrollLeft - walk;
+
+});
+
+</script>
+```<script>
+
+const testimonials =
+document.querySelectorAll(".testimonial-card");
+
+let currentTestimonial = 0;
+
+function showTestimonial(index){
+
+    testimonials.forEach(card=>{
+        card.classList.remove("active");
+    });
+
+    testimonials[index]
+    .classList.add("active");
+}
+
+document
+.querySelector(".next-testimonial")
+.addEventListener("click",()=>{
+
+    currentTestimonial++;
+
+    if(currentTestimonial >= testimonials.length){
+        currentTestimonial = 0;
+    }
+
+    showTestimonial(currentTestimonial);
+
+});
+
+document
+.querySelector(".prev-testimonial")
+.addEventListener("click",()=>{
+
+    currentTestimonial--;
+
+    if(currentTestimonial < 0){
+        currentTestimonial =
+        testimonials.length - 1;
+    }
+
+    showTestimonial(currentTestimonial);
+
+});
+
+</script>
+
+</body>
+
+</html>
