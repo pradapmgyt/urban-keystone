@@ -12,6 +12,11 @@ html{
     scroll-behavior:smooth;
 }
 
+html,
+body{
+    overflow-x:hidden;
+}
+
 body{
     background:#fff;
     color:#111;
@@ -21,7 +26,7 @@ body{
 
 .navbar{
     display:grid;
-    grid-template-columns:300px 1fr 150px;
+    grid-template-columns:300px 1fr auto;
 
     align-items:center;
 
@@ -445,11 +450,15 @@ body{
 
 @media(max-width:768px){
 
-    .navbar{
-        flex-direction:column;
-        gap:20px;
-        padding:20px;
-    }
+   .navbar{
+    display:flex !important;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:15px;
+    padding:20px;
+}
 
     .brand-title{
         font-size:22px;
@@ -498,5 +507,44 @@ body{
 .contact-grid{
     grid-template-columns:1fr;
 }
+
+.logo-wrapper{
+    align-items:center;
+    text-align:center;
 }
+
+.nav-links{
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.social-links{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin:0;
+}
+
+.social-row{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.carousel-track{
+    width:100%;
+}
+
+.carousel-track img{
+    height:220px;
+}
+
+.home-about h2{
+    font-size:38px;
+    line-height:1.2;
+}
+
+}
+
 
